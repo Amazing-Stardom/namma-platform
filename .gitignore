@@ -1,0 +1,41 @@
+# ============================================================
+# Android / Gradle build outputs
+# ============================================================
+.gradle/
+build/
+app/build/
+
+# Generated APK / AAB artifacts
+*.apk
+*.aab
+
+# Proguard mapping files (regenerated each build)
+*.mapping
+mapping.txt
+
+# Local configuration — contains absolute SDK path, never commit
+local.properties
+
+# Android Studio IDE files
+.idea/
+*.iml
+.DS_Store
+
+# Capture files (Android Studio profiler)
+captures/
+
+# Kotlin/Java generated sources
+app/src/main/gen/
+
+# Lint output
+lint-results*.xml
+lint-results*.html
+
+# Test results
+app/src/test/
+app/src/androidTest/
+
+# OS-specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini

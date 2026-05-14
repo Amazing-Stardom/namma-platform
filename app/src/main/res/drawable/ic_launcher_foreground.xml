@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Launcher icon foreground: white train vector -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Train body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,45 L30,75 Q30,80 35,80 L73,80 Q78,80 78,75 L78,45 Q78,40 73,40 L35,40 Q30,40 30,45 Z" />
+    <!-- Train window left -->
+    <path
+        android:fillColor="#1565C0"
+        android:pathData="M36,46 L50,46 L50,58 L36,58 Z" />
+    <!-- Train window right -->
+    <path
+        android:fillColor="#1565C0"
+        android:pathData="M58,46 L72,46 L72,58 L58,58 Z" />
+    <!-- Train wheel left -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M36,80 m-6,0 a6,6 0 1,0 12,0 a6,6 0 1,0 -12,0 Z" />
+    <!-- Train wheel right -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M66,80 m-6,0 a6,6 0 1,0 12,0 a6,6 0 1,0 -12,0 Z" />
+    <!-- Train roof -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M33,40 L75,40 L72,32 L36,32 Z" />
+    <!-- Chimney -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,32 L58,32 L58,26 L50,26 Z" />
+</vector>
