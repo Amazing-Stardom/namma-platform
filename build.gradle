@@ -1,0 +1,6 @@
+// Project-level build.gradle
+// Defines build configuration shared across all modules.
+
+plugins {
+    id 'com.android.application' version '8.2.2' apply false
+}

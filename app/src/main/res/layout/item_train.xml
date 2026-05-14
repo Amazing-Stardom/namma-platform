@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    item_train.xml — Single train card for the RecyclerView.
+    Contains train name, departure time, platform badge, and "View Coach Layout" button.
+-->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/card_background">
+
+        <!-- Train name (large, bold, blue) -->
+        <TextView
+            android:id="@+id/tv_train_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Train Name"
+            android:textColor="@color/primary_blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Row: departure time + platform badge -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <!-- Departure time -->
+            <TextView
+                android:id="@+id/tv_departure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🕐 00:00 AM"
+                android:textColor="@color/black_text"
+                android:textSize="15sp" />
+
+            <!-- Platform badge (yellow bg) -->
+            <TextView
+                android:id="@+id/tv_platform_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Platform: 1"
+                android:textColor="@color/black_text"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:background="@color/accent_yellow"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp" />
+
+        </LinearLayout>
+
+        <!-- View Coach Layout button -->
+        <Button
+            android:id="@+id/btn_view_coach"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/btn_view_coach"
+            android:textColor="@color/black_text"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:backgroundTint="@color/accent_yellow"
+            android:stateListAnimator="@null" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

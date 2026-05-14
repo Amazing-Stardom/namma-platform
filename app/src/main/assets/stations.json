@@ -1,0 +1,119 @@
+{
+  "stations": [
+    {
+      "stationName": "Mysuru",
+      "trains": [
+        {
+          "trainName": "Chamundi Express (16215)",
+          "departure": "06:15 AM",
+          "platform": 1,
+          "coaches": ["ENG", "SL", "SL", "SL", "GEN", "GEN", "L", "GEN", "SL", "SL", "AC", "AC"]
+        },
+        {
+          "trainName": "Kaveri Express (16021)",
+          "departure": "09:30 AM",
+          "platform": 2,
+          "coaches": ["ENG", "AC", "AC", "SL", "SL", "L", "GEN", "GEN", "GEN", "SL"]
+        },
+        {
+          "trainName": "Tippu Express (12614)",
+          "departure": "02:45 PM",
+          "platform": 1,
+          "coaches": ["ENG", "GEN", "GEN", "L", "SL", "SL", "SL", "AC", "GEN"]
+        }
+      ]
+    },
+    {
+      "stationName": "Mandya",
+      "trains": [
+        {
+          "trainName": "Rajahamsa Express (12025)",
+          "departure": "07:00 AM",
+          "platform": 1,
+          "coaches": ["ENG", "AC", "AC", "SL", "SL", "SL", "L", "GEN", "GEN", "GEN"]
+        },
+        {
+          "trainName": "Mysuru Express (16220)",
+          "departure": "11:20 AM",
+          "platform": 2,
+          "coaches": ["ENG", "GEN", "GEN", "GEN", "L", "SL", "SL", "AC", "SL", "GEN"]
+        },
+        {
+          "trainName": "Cauvery Passenger (56213)",
+          "departure": "04:10 PM",
+          "platform": 1,
+          "coaches": ["ENG", "GEN", "GEN", "L", "GEN", "GEN", "SL", "SL"]
+        }
+      ]
+    },
+    {
+      "stationName": "Maddur",
+      "trains": [
+        {
+          "trainName": "Intercity Express (12076)",
+          "departure": "08:05 AM",
+          "platform": 1,
+          "coaches": ["ENG", "AC", "SL", "SL", "L", "GEN", "GEN", "GEN", "SL"]
+        },
+        {
+          "trainName": "Shatabdi Express (12007)",
+          "departure": "10:45 AM",
+          "platform": 2,
+          "coaches": ["ENG", "AC", "AC", "AC", "L", "GEN", "GEN", "AC", "AC"]
+        },
+        {
+          "trainName": "Hassan Passenger (56229)",
+          "departure": "03:30 PM",
+          "platform": 1,
+          "coaches": ["ENG", "GEN", "GEN", "GEN", "L", "GEN", "SL", "SL"]
+        }
+      ]
+    },
+    {
+      "stationName": "Ramanagara",
+      "trains": [
+        {
+          "trainName": "Bangalore Express (12028)",
+          "departure": "06:50 AM",
+          "platform": 1,
+          "coaches": ["ENG", "AC", "AC", "SL", "SL", "L", "GEN", "GEN", "GEN", "SL", "SL"]
+        },
+        {
+          "trainName": "Kengeri Passenger (56279)",
+          "departure": "12:15 PM",
+          "platform": 1,
+          "coaches": ["ENG", "GEN", "GEN", "L", "GEN", "GEN", "GEN"]
+        },
+        {
+          "trainName": "Mysuru Rajya Rani (12225)",
+          "departure": "05:00 PM",
+          "platform": 2,
+          "coaches": ["ENG", "AC", "AC", "SL", "SL", "SL", "L", "GEN", "GEN", "AC"]
+        }
+      ]
+    },
+    {
+      "stationName": "Bengaluru City",
+      "trains": [
+        {
+          "trainName": "Rajdhani Express (22691)",
+          "departure": "08:00 AM",
+          "platform": 3,
+          "coaches": ["ENG", "AC", "AC", "AC", "AC", "L", "SL", "SL", "SL", "GEN", "GEN", "AC"]
+        },
+        {
+          "trainName": "Brindavan Express (12639)",
+          "departure": "01:30 PM",
+          "platform": 5,
+          "coaches": ["ENG", "GEN", "GEN", "L", "GEN", "SL", "SL", "AC", "AC", "SL", "GEN"]
+        },
+        {
+          "trainName": "Hampi Express (16591)",
+          "departure": "09:00 PM",
+          "platform": 2,
+          "coaches": ["ENG", "SL", "SL", "SL", "L", "GEN", "GEN", "GEN", "SL", "SL", "AC", "AC"]
+        }
+      ]
+    }
+  ]
+}

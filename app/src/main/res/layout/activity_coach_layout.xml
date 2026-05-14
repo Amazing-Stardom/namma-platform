@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    activity_coach_layout.xml — Displays coach arrangement for a train.
+    Toolbar, platform card, horizontal scrollable coach layout, general coach hint, TTS button.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primary_blue">
+
+    <!-- Blue toolbar with back button and train name -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary_blue_dark"
+        app:titleTextColor="@color/white_text"
+        app:navigationIconTint="@color/white_text" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="24dp">
+
+            <!-- Platform info card (yellow text, blue bg card) -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary_blue_dark"
+                    android:padding="20dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_platform_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🚉 Platform Number: 1"
+                        android:textColor="@color/accent_yellow"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:gravity="center" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Section title -->
+            <TextView
+                android:id="@+id/tv_coach_layout_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coach_layout_title"
+                android:textColor="@color/white_text"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Horizontal scrollable coach layout -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:scrollbars="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/coach_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp" />
+
+            </HorizontalScrollView>
+
+            <!-- General Coach position hint (yellow highlighted box) -->
+            <TextView
+                android:id="@+id/tv_general_coach_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="👆 Stand here for General Coach - Position 5"
+                android:textColor="@color/black_text"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@color/accent_yellow"
+                android:padding="14dp"
+                android:layout_marginBottom="24dp"
+                android:visibility="gone" />
+
+            <!-- Coach colour legend card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/card_background"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coach Colour Legend"
+                        android:textColor="@color/primary_blue"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Legend row: ENG -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="6dp">
+                        <View android:layout_width="20dp" android:layout_height="20dp"
+                            android:background="#607D8B" android:layout_marginEnd="10dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="ENG — Engine" android:textColor="@color/black_text" android:textSize="13sp"/>
+                    </LinearLayout>
+
+                    <!-- Legend row: GEN -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="6dp">
+                        <View android:layout_width="20dp" android:layout_height="20dp"
+                            android:background="#1565C0" android:layout_marginEnd="10dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="GEN — General" android:textColor="@color/black_text" android:textSize="13sp"/>
+                    </LinearLayout>
+
+                    <!-- Legend row: L -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="6dp">
+                        <View android:layout_width="20dp" android:layout_height="20dp"
+                            android:background="#E91E63" android:layout_marginEnd="10dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="L — Ladies" android:textColor="@color/black_text" android:textSize="13sp"/>
+                    </LinearLayout>
+
+                    <!-- Legend row: SL -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="6dp">
+                        <View android:layout_width="20dp" android:layout_height="20dp"
+                            android:background="#2E7D32" android:layout_marginEnd="10dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="SL — Sleeper" android:textColor="@color/black_text" android:textSize="13sp"/>
+                    </LinearLayout>
+
+                    <!-- Legend row: AC -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <View android:layout_width="20dp" android:layout_height="20dp"
+                            android:background="#6A1B9A" android:layout_marginEnd="10dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="AC — Air Conditioned" android:textColor="@color/black_text" android:textSize="13sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Speak in Kannada button -->
+            <Button
+                android:id="@+id/btn_speak_kannada"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="@string/btn_speak_kannada"
+                android:textColor="@color/black_text"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:backgroundTint="@color/accent_yellow"
+                android:stateListAnimator="@null" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="Theme.NammaPlatform" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryVariant">@color/primary_blue_dark</item>
+        <item name="colorOnPrimary">@color/white_text</item>
+        <!-- Accent / secondary brand color -->
+        <item name="colorSecondary">@color/accent_yellow</item>
+        <item name="colorSecondaryVariant">@color/accent_yellow_dark</item>
+        <item name="colorOnSecondary">@color/black_text</item>
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/primary_blue_dark</item>
+        <!-- Window background -->
+        <item name="android:windowBackground">@color/primary_blue</item>
+    </style>
+
+    <!-- Toolbar theme override -->
+    <style name="Theme.NammaPlatform.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- Popup menu overlay -->
+    <style name="Theme.NammaPlatform.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Yellow button style -->
+    <style name="YellowButton">
+        <item name="android:textColor">@color/black_text</item>
+        <item name="android:background">@color/accent_yellow</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- Card style -->
+    <style name="TrainCard">
+        <item name="cardElevation">6dp</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+</resources>

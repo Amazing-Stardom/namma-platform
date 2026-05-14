@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App name -->
+    <string name="app_name">Namma Platform</string>
+    <string name="app_name_kannada">ನಮ್ಮ ಪ್ಲಾಟ್ಫಾರ್ಮ್</string>
+    <string name="app_subtitle">Your Local Station Guide</string>
+
+    <!-- Main Activity -->
+    <string name="select_station_label">Select Your Station</string>
+    <string name="btn_view_trains">View Trains →</string>
+    <string name="train_icon">🚆</string>
+
+    <!-- Train List Activity -->
+    <string name="next_trains_title">Next 3 Trains</string>
+    <string name="btn_view_coach">View Coach Layout →</string>
+    <string name="platform_label">Platform: </string>
+
+    <!-- Coach Layout Activity -->
+    <string name="coach_layout_title">Coach Layout - Where to Stand</string>
+    <string name="platform_info_prefix">🚉 Platform Number: </string>
+    <string name="btn_speak_kannada">🔊 Speak in Kannada</string>
+    <string name="general_coach_hint_prefix">👆 Stand here for General Coach - Position </string>
+
+    <!-- Coach type labels -->
+    <string name="coach_engine">ENG</string>
+    <string name="coach_general">GEN</string>
+    <string name="coach_ladies">L</string>
+    <string name="coach_sleeper">SL</string>
+    <string name="coach_ac">AC</string>
+
+    <!-- Spinner station options -->
+    <string name="station_mysuru">Mysuru</string>
+    <string name="station_mandya">Mandya</string>
+    <string name="station_maddur">Maddur</string>
+    <string name="station_ramanagara">Ramanagara</string>
+    <string name="station_bengaluru">Bengaluru City</string>
+
+    <!-- Kannada TTS announcement template -->
+    <!-- Placeholders: %1$s = train name, %2$d = platform number, %3$d = general coach position -->
+    <string name="tts_announcement">ರೈಲು %1$s ಪ್ಲಾಟ್ಫಾರ್ಮ್ ನಂಬರ್ %2$d ಗೆ ಬರುತ್ತದೆ. ಜನರಲ್ ಕೋಚ್ ಸ್ಥಾನ %3$d ರಲ್ಲಿದೆ.</string>
+
+    <!-- Error / fallback messages -->
+    <string name="no_trains_found">No trains found for this station.</string>
+    <string name="tts_not_supported">Kannada Text-to-Speech is not supported on this device.</string>
+    <string name="json_load_error">Unable to load station data.</string>
+
+    <!-- Legend labels -->
+    <string name="legend_engine">Engine</string>
+    <string name="legend_general">General</string>
+    <string name="legend_ladies">Ladies</string>
+    <string name="legend_sleeper">Sleeper</string>
+    <string name="legend_ac">AC</string>
+    <string name="departure_prefix">🕐 </string>
+</resources>
