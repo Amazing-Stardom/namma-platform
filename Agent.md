@@ -1,4 +1,4 @@
-I'll help you get a detailed explanation of how your app works. Let me start by exploring the repository structure and main code files.Now let me explore the main project structure and code files:Now I have comprehensive information about the app. Let me create a detailed explanation document.
+
 
 ## 📱 **NAMMA PLATFORM — Detailed Explanation**
 
